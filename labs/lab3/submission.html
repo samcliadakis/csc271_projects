@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submission</title>
+</head>
+<body>
+    <h1>Recipe Submission</h1>
+    <p>Enter a recipe here</p>
+</body>
+
+<form action="index.html" method="get">
+    <label for="recipe-name">Recipe Name:</label>
+    <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+
+    <label for="recipe-description">Recipe Description:</label>
+    <textarea id="recipe-description" name="recipe-description" required></textarea><br><br>
+
+    <label>Difficulty:</label><br>
+    <input type="radio" id="easy" name="difficulty" value="easy" required>
+    <label for="easy">Easy</label><br>
+    <input type="radio" id="medium" name="difficulty" value="medium">
+    <label for="medium">Medium</label><br>
+    <input type="radio" id="hard" name="difficulty" value="hard">
+    <label for="hard">Hard</label><br><br>
+
+    <label>Dietary Preferences:</label><br>
+    <input type="checkbox" id="vegetarian" name="dietary" value="vegetarian">
+    <label for="vegetarian">Vegetarian</label><br>
+    <input type="checkbox" id="vegan" name="dietary" value="vegan">
+    <label for="vegan">Vegan</label><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</html>
