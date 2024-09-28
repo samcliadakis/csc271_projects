@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+</head>
+<body>
+    <header>
+        <h1>Account</h1>
+    </header>
+    <main>
+        <img src="images/icon.png" alt="Account Icon" style="width: 100px; height: auto;" />
+        <h2>Sign In or Create an Account</h2>
+        <div style="text-align: center;">
+            <p>Here you can view your saved viewpoints, or submit your own new finds. You can also view account information and settings.</p>
+            <p>You can change your password and profile picture, and also see your added friends.</p>
+            <p><a href="index.html">Home Page</a></p>
+            <p><a href="account.html">Account Page</a></p>
+
+            <table style="margin: 0 auto; border-collapse: collapse;">
+                <tr>
+                    <td style="border: 1px solid black; padding: 10px;">Account Settings</td>
+                    <td style="border: 1px solid black; padding: 10px;">Friends</td>
+                    <td style="border: 1px solid black; padding: 10px;">Saved Views</td>
+                    <td style="border: 1px solid black; padding: 10px;">Submit a new View</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <form action="/submit_account_info" method="post">
+                <label for="display_name">Display Name:</label>
+                <input type="text" id="display_name" name="display_name" required>
+                <br><br>
+                <label>Location Services:</label>
+                <input type="radio" id="location_on" name="location_services" value="on" required>
+                <label for="location_on">On</label>
+                <input type="radio" id="location_off" name="location_services" value="off" required>
+                <label for="location_off">Off</label>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br>
+            
+        </div>
+        
+        <div style="text-align: center;">
+            <img src="images/fall.jpg" alt="Fall Image" style="width: 850px; height: auto;" />
+        </div>
+    </main>
+</body>
+</html>
+
