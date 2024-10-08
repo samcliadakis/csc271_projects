@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* Choose your preferred font */
+    color: darkgreen;
+}
+
+body {
+    background-image: url('../images/sky2.jpg'); /* Adjust path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    margin: 30px;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    color: darkgreen;
+}
+
+#emphasis {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.settings {
+    color: grey;
+    font-family: 'Georgia', serif;
+}
+
