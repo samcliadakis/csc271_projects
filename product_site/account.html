@@ -7,17 +7,37 @@
     <title>Account Page</title>
 </head>
 <body>
-    <header style="text-align: center;"></header>
-        <h1>Account</h1>
+    
+    <header>
+        <div>
+            <img src="images/logo.png" alt="OverView Logo" style="height: 50px; float: right;">
+            <nav>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="display: inline; margin-right: 10px;"><a href="index.html">Home</a></li>
+                    <li style="display: inline; margin-right: 10px;"><a href="account.html">Account</a></li>
+                    <li style="display: inline; margin-right: 10px;"><a href="sceneryPage.html">Scenery</a></li>
+                    <li style="display: inline;"><a href="mapView.html">Map</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
-    <main>
+
+    <div class = "mainContent">
+
+        <h1>Account</h1>
+    
+
         <img src="images/icon.png" alt="Account Icon" style="width: 100px; height: auto;" />
+        
         <h2 style="text-align: center;">Sign In or Create an Account</h2>
-        <div style="text-align: center;">
-            <p>Here you can view your saved viewpoints, or submit your own new finds. You can also view account information and settings.</p>
-            <p>You can change your password and profile picture, and also see your added friends.</p>
-            <p><a href="index.html">Home Page</a></p>
-            <p><a href="account.html">Account Page</a></p>
+
+        <p>Here you can view your saved viewpoints, or submit your own new finds. You can also view account information and settings.</p>
+        <p>You can change your password and profile picture, and also see your added friends.</p>
+    
+    </div>
+
+    <div>
 
             <table style="margin: 0 auto; border-collapse: collapse;">
                 <tr>
@@ -28,29 +48,32 @@
                 </tr>
             </table>
 
-            <br>
+    </div>
 
-            <form action="/submit_account_info" method="post">
-                <label for="display_name">Display Name:</label>
-                <input type="text" id="display_name" name="display_name" required>
-                <br><br>
-                <label>Location Services:</label>
-                <input type="radio" id="location_on" name="location_services" value="on" required>
-                <label for="location_on">On</label>
-                <input type="radio" id="location_off" name="location_services" value="off" required>
-                <label for="location_off">Off</label>
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
+    <div style="text-align: center;">
 
-            <br>
-            
-        </div>
+        <br>
+
+        <form action="/submit_account_info" method="post">
+            <label for="display_name">Display Name:</label>
+            <input type="text" id="display_name" name="display_name" required>
+            <br><br>
+            <label>Location Services:</label>
+            <input type="radio" id="location_on" name="location_services" value="on" required>
+            <label for="location_on">On</label>
+            <input type="radio" id="location_off" name="location_services" value="off" required>
+            <label for="location_off">Off</label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
         
-        <div style="text-align: center;">
-            <img src="images/fall.jpg" alt="Fall Image" style="width: 850px; height: auto;" />
-        </div>
-    </main>
+        <img src="images/fall.jpg" alt="Fall Image" style="width: 850px; height: auto;" />
+
+    </div> 
+
 </body>
+
 </html>
 
