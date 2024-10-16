@@ -13,7 +13,6 @@ header {
 }
 
 header a {
-    float: center;
     font-family: 'Arial', sans-serif;
     color: darkblue;
     font-size: 18px;
@@ -42,7 +41,6 @@ header a.right {
 }
 
 .mainContent {
-    float: center;
     width: 80%; 
     background-color: white; 
     padding: 20px;
