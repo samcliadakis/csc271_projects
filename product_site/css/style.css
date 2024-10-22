@@ -51,10 +51,7 @@ header a.right {
 
 
 body {
-    background-image: url('../images/sky2.jpg'); /* Adjust path */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: mintcream;
     margin: 0;
     height: 100vh; /* Full viewport height */
     margin: 30px;
