@@ -14,10 +14,10 @@
             <img src="images/logo.png" alt="OverView Logo" style="height: 50px; float: right;">
             <nav>
                 <ul style="list-style-type: none; padding: 0;">
-                    <li style="display: inline; margin-right: 10px;"><a href="index.html">Home</a></li>
-                    <li style="display: inline; margin-right: 10px;"><a href="account.html">Account</a></li>
-                    <li style="display: inline; margin-right: 10px;"><a href="sceneryPage.html">Scenery</a></li>
-                    <li style="display: inline;"><a href="mapView.html">Map</a></li>
+                    <li style="display: inline; margin-right: 10px;"><a href="Overview-exploration.html">Home</a></li>
+                    <li style="display: inline; margin-right: 10px;"><a href="account-exploration.html">Account</a></li>
+                    <li style="display: inline; margin-right: 10px;"><a href="scenery-exploration.html">Scenery</a></li>
+                    <li style="display: inline;"><a href="map-exploration.html">Map</a></li>
                 </ul>
             </nav>
 
@@ -29,7 +29,7 @@
     <div style="text-align: center;">
         <img src="images/logo.png" alt="OverView Nature Logo">
         
-        <h2>
+        <h2 class="welcome">
             Welcome to OverView<br>
             <em>Overview</em> is an app that allows you to find scenic spots in your area.<br>
         </h2>
@@ -47,7 +47,7 @@
             <li>& more</li>
         </ul>
     
-        <p>
+        <p id="description">
             You can also see ratings and reviews from other users. 
             <em>Overview</em> will solve the issue of not knowing where to go for a weekend getaway or a day trip. You can also use it to find new places to photograph and post on social media.
             You should invest in <em>OverView</em> because it is a unique new idea that uses components from other apps to create a new experience. It is also easily scalable and has its own social aspect.
@@ -57,6 +57,55 @@
 
         <p style="font-size: 0.8em;">Enjoy nature, scenery, and photography</p>
     </div>
+
+
+    <div style="text-align: center; margin: 20px;">
+        <label for="stateInput">Enter a US state:</label>
+        <input type="text" id="stateInput" name="stateInput">
+        <button onclick="processState()">Submit</button>
+    </div>
+
+    <div id="output" style="text-align: center; margin: 20px;"></div>
+
+    <script src="js/simple_script.js"></script>
+
+    <div style="text-align: center; margin: 20px;">
+        <form>
+            <p>Do you like:</p>
+            <label>
+                <input type="checkbox" name="interests" value="photography"> Photography
+            </label><br>
+            <label>
+                <input type="checkbox" name="interests" value="social_media"> Posting on Social Media
+            </label><br>
+            <label>
+                <input type="checkbox" name="interests" value="hiking"> Hiking
+            </label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div style="text-align: center; margin: 20px;">
+        <h3></h3>
+        <div id="results"></div>
+    </div>
+
+    <script src="js/decisionTree.js"></script>
+
+    <div style="text-align: center;">
+        <h2>Top 10 Hikes in Rhode Island</h2>
+        <div id="hikeList" style="display: inline-block; text-align: left;"></div>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>Top 5 Hikes States With the Most National Parks</h2>
+        <div id="stateList" style="display: inline-block; text-align: left;"></div>
+    </div>
+    
+    <script src="js/loops.js"></script>
+
+    <br><br><br>
+
 
     <div style="text-align: center;">
         <img src="images/mountain.jpg" alt="Photography Mountain View" style="width: 400px; height: auto; margin: 10px; border: 2px solid white;">
