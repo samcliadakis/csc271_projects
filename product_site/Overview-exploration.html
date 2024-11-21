@@ -69,11 +69,50 @@
 
     <script src="js/simple_script.js"></script>
 
+    <div style="text-align: center; margin: 20px;">
+        <form>
+            <p>Do you like:</p>
+            <label>
+                <input type="checkbox" name="interests" value="photography"> Photography
+            </label><br>
+            <label>
+                <input type="checkbox" name="interests" value="social_media"> Posting on Social Media
+            </label><br>
+            <label>
+                <input type="checkbox" name="interests" value="hiking"> Hiking
+            </label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div style="text-align: center; margin: 20px;">
+        <h3></h3>
+        <div id="results"></div>
+    </div>
+
+    <script src="js/decisionTree.js"></script>
 
     <div style="text-align: center;">
-        <img src="images/mountain.jpg" alt="Photography Mountain View" style="width: 400px; height: auto; margin: 10px; border: 2px solid white;">
-        <img src="images/ocean.jpg" alt="Photography Ocean View" style="width: 450px; height: auto; margin: 10px; border: 2px solid white;">
+        <h2>Top 10 Hikes in Rhode Island</h2>
+        <div id="hikeList" style="display: inline-block; text-align: left;"></div>
+    </div>
 
+    <div style="text-align: center;">
+        <h2>Top 5 Hikes States With the Most National Parks</h2>
+        <div id="stateList" style="display: inline-block; text-align: left;"></div>
+    </div>
+    
+    <script src="js/loops.js"></script>
+
+    <br><br><br>
+
+    <div style="text-align: center;">
+        <img id="toggleImage" src="images/mountain.jpg" alt="Toggle Image" style="width: 650px;">
+    </div>
+
+    <script src="js/eventListener.js"></script>
+
+    <div style="text-align: center;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/MwFx80N-FlM?si=l0QVdWQhQZ3afEnp" ></iframe>
     </div>
 
