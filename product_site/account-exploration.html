@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <header>
+    <header style="border-radius: 15px; overflow: hidden;">
         <div>
             <img src="images/logo.png" alt="OverView Logo" style="height: 50px; float: right;">
             <nav>
@@ -71,18 +71,23 @@
     <div style="text-align: center;">
 
         <br>
-
-        <form action="/submit_account_info" method="post">
-            <label for="display_name">Display Name:</label>
+        <form onsubmit="event.preventDefault(); alert('Display name saved');">
+            <label for="display_name">Enter Display Name:</label>
             <input type="text" id="display_name" name="display_name" required>
+
             <br><br>
+
             <label>Location Services:</label>
+
             <input type="radio" id="location_on" name="location_services" value="on" required>
             <label for="location_on">On</label>
+
             <input type="radio" id="location_off" name="location_services" value="off" required>
             <label for="location_off">Off</label>
+
             <br><br>
-            <input type="submit" value="Submit">
+
+            <input type="submit" value="Submit Display Name">
         </form>
 
         <br>
